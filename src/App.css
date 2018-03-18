@@ -1,17 +1,19 @@
 .App {
   text-align: center;
+  background-color: #c8e6c9;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
+  background-color: #c8e6c9;
   height: 80px;
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #c8e6c9;
+  color: #c8e6c9;
   height: 150px;
   padding: 20px;
-  color: white;
 }
 
 .App-title {
@@ -20,6 +22,33 @@
 
 .App-intro {
   font-size: large;
+}
+.hero-title {
+  text-align: center;
+  font-family: 'Maven Pro', sans-serif;
+  width: 100%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.landing {
+  display: block;
+  width: 80%;
+}
+
+.point {
+  display: block;
+  width: 80%;
+}
+
+.selling-points {
+  text-align: center;
+  font-family: 'Maven Pro', sans-serif;
+  width: 100%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
 }
 
 @keyframes App-logo-spin {

@@ -47,6 +47,13 @@ class Album extends Component {
     this.audioElement.removeEventListener('volumechange', this.eventListeners.volumechange);
   }
 
+  formatTime(time) {
+    const timeInSeconds = Math.floor(parseFloat(time))
+    const minutes = Math.floor(timeInSeconds / 60)
+    const remainingSeconds = timeInSeconds - (minutes * 60)
+    return minutes + ":" + remainingSeconds
+  }
+
   handleTimeChange(e) {
     const newTime = this.audioElement.duration * e.target.value;
     this.audioElement.currentTime = newTime;
@@ -127,11 +134,11 @@ class Album extends Component {
               <tr className="song" key={index} onClick={() => this.handleSongClick(song)} >
                 <td className="song-actions">
                   <button>
-                    <span className="song-number">{index+1}</span>
                     <span className="ion-play"></span>
                     <span className="ion-pause"></span>
                   </button>
                 </td>
+                <span className="song-number">{index+1}</span>
                 <td className="song-title">{song.title}</td>
                 <td className="song-duration">{song.duration}</td>
               </tr>
