@@ -1,3 +1,19 @@
+button {
+  margin: 5px;
+}
+
+tr {
+  margin: auto;
+}
+
+.album-info img {
+  display: block;
+}
+
+.album-details {
+  display: block;
+}
+
 .App {
   text-align: center;
 }
@@ -22,6 +38,18 @@
   font-size: large;
 }
 
+.song-actions {
+  display: inline-block;
+  padding: inherit;
+}
+
+.song-list {
+  display: block;
+}
+
+.song-number-column {
+  display: block;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
