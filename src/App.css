@@ -1,56 +1,177 @@
-button {
-  margin: 5px;
+body {
+  height: 100%;
+  background-color: #ffffff;
+  background-image: linear-gradient(#FCFFF1, #BBFAF2, #FCFFF1);
 }
 
-tr {
-  margin: auto;
+body, html {
 }
 
-.album-info img {
-  display: block;
+h1 {
+  font-family: 'Monoton', cursive;
 }
 
-.album-details {
-  display: block;
+h2 {
+  font-family: 'Jura', sans-serif;
 }
 
-.App {
+h3 {
+  font-family: 'Jura', sans-serif;
+}
+
+h4 {
+  font-family: 'Jura', sans-serif;
+}
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#root {
+  background:
+}
+
+.album-title {
+  font-family: 'Jura', sans-serif;
+  font-size: 40px;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.bloc-jams-header {
+  max-width: 700px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.card-body{
+  background-color: #F2FFFC;
+  color: #198083;
+  opacity: 0.75;
 }
 
-.App-title {
-  font-size: 1.5em;
+.lead {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
-.App-intro {
-  font-size: large;
+.card-deck {
+  opacity: 0.75;
 }
 
-.song-actions {
-  display: inline-block;
-  padding: inherit;
+.card-header {
+  height: 100px;
+  font-family: 'Jura', sans-serif;
 }
 
-.song-list {
-  display: block;
+.mx-auto {
+  font-family: 'Jura', sans-serif;
+}
+
+.player-bar {
+    position: fixed;
+    bottom: 0;
+    left: 53%;
+    right: 0;
+    height: 100px;
+    background: rgba(252, 255, 241, 0.3);
+    z-index: 100;
+}
+
+.player-bar .container {
+    display: table;
+    padding: 5px;
+    width: 50%;
+}
+
+.player-bar .control-group {
+    display: table-row;
+    vertical-align: right;
+}
+
+.song-title {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.song-duration {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.song-number {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .song-number-column {
-  display: block;
+  font-family: 'Montserrat', sans-serif;
+  width: 20px;
 }
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+
+.song-title-column {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.song-duration-column {
+  font-family: 'Montserrat', sans-serif;
+}
+
+span.song-number {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 4px;
+}
+
+span.ion-play {
+  padding: 2px;
+}
+
+span.ion-pause {
+  padding: 2px;
+}
+
+span.total-time {
+  font-family: 'Montserrat', sans-serif;
+  padding: 6px;
+}
+
+span.current-time {
+  font-family: 'Montserrat', sans-serif;
+  padding: 6px;
+}
+
+span.icon {
+  padding: 6px;
+}
+
+button.previous {
+  height: 20px;
+}
+
+#buttons {
+    width: 100%;
+    text-align: center;
+}
+
+#ion-play{
+  padding: 2px;
+}
+
+#time-control {
+    width: 75%;
+    text-align: center;
+    padding-right: 1rem;
+}
+
+#volume-control {
+    width: 75%;
+    text-align: center;
+    padding-right: 1rem;
+}
+
+
+@media (max-width: 1000px) {
+    .player-bar {
+      height: 100px;
+    }
+
+#album-cover-art {
+      height: 300px;
+      width: 300px;
+    }
 }
